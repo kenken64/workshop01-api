@@ -15,7 +15,7 @@ npm i express express-handlebars request uuid --save
 
 1. a. Answer is on the day1_a_http.pdf page 13 and 16
 
-   b. Get return the body or payload but HEAD only return the metadata which is the HEADERS. 
+   b. GET return the body and HEADERS but HEAD only return the the HEADERS without the payload. 
 
 2. When a resource hyperlink is click and when a URL is accessed. Sometimes there is ajax polling that happens when the landing page is accessed without user manually trigger an event on the website e.g. charting app
 
@@ -36,7 +36,7 @@ npm i express express-handlebars request uuid --save
 * Via the X-Api-Key HTTP header.
 * Via the Authorization HTTP header. Bearer optional, do not base 64 encode.
 
-b. Right after getting the response if the result is more than 30 records the program will truncate it.
+4. b. Right after getting the response if the result is more than 30 records the program will truncate it the result.
 
 ```
 https://newsapi.org/v2/top-headlines?apiKey=ecc8081a11e24c1490722c9da1564fe5&sources=reuters&q=Technology
