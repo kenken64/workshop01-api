@@ -20,9 +20,9 @@ npm i express express-handlebars request uuid --save
 2. When a resource hyperlink is click and when a URL is accessed. Sometimes there is ajax polling that happens when the landing page is accessed without user manually trigger an event on the website e.g. charting app
 
 3. a. <b>By duplication</b>
-   The API app itself must be dockerize. I will replicate the warehouse and inventory service with many similar api process  depending on the resource sizing and requirement based ont he estimated volume. Likely put into service cluster service (Kubernetes) 
+   The API app itself must be dockerize. I will replicate the warehouse and inventory service with many similar api process  depending on the resource sizing and requirement based on the estimated volumetric sizing. Likely put into service cluster e.g. (Kubernetes) 
 
-   b. <b>By functional decomposition</b> Assume there isn't any authentication for both of this services. I will split the warehouse service as a standalone api service and inventory service as another service. Whenever a stock is updated on the warehouse both service communicate using some sort of messaging service as the event driven architecture.
+   b. <b>By functional decomposition</b> I will split the warehouse service as a standalone api service and inventory service as another service. Whenever a stock is updated on the warehouse both service communicate using some sort of messaging service as the event driven architecture. Most of the time when a point of sales app query the warehouse information likely it is going to be cache. A company can only have limited of warehouse within the same region.
 
    c. <b>By data partitioning</b> I will go with sharding the inventory table there is where the product name , price and quantity are kept. I forsee heavy query will be hitting the inventory api endpoint whenever a customer walk into the retail store to buy an item. Assume the company have multiple warehouse location.
 
