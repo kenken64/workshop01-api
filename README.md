@@ -36,7 +36,7 @@ npm i express express-handlebars request uuid --save
 * Via the X-Api-Key HTTP header.
 * Via the Authorization HTTP header. Bearer optional, do not base 64 encode.
 
-4. b. Right after getting the response if the result is more than 30 records the program will truncate it the result.
+4. b. Right after getting the response if the result is more than 30 records the program will truncate the result to meet the 30 records requirement.
 
 ```
 https://newsapi.org/v2/top-headlines?apiKey=ecc8081a11e24c1490722c9da1564fe5&sources=reuters&q=Technology
