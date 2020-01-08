@@ -24,7 +24,7 @@ npm i express express-handlebars request uuid --save
 
    b. <b>By functional decomposition</b> Assume there isn't any authentication for both of this services. I will split the warehouse service as a standalone api service and inventory service as another service. Whenever a stock is updated on the warehouse both service communicate using some sort of messaging service as the event driven architecture.
 
-   c. <b>By data partitioning</b> I will go with sharding the invesntory table there is where the product price and quantity of the warehouse is kept. I forsee heavy query will be hitting thie api endpoint the most.
+   c. <b>By data partitioning</b> I will go with sharding the inventory table there is where the product name , price and quantity are kept. I forsee heavy query will be hitting the inventory api endpoint whenever a customer walk into the retail store to buy an item. Assume the company have multiple warehouse location.
 
    Its going to be range based sharding
 
