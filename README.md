@@ -71,3 +71,8 @@ c. If you don't append your API key correctly, or your API key is invalid, you w
 d. By default newsapi cache the results of each request you make for 5 minutes or 100 further requests, whichever happens first. If you make the same request again, for example if you have multiple users or multiple clients, we'll serve the cached result and it won't count against your monthly requests. This is useful if you're hooking the API into your app directly (although this isn't recommended because it exposes your API key). 
 
 https://newsapi.org/docs/caching
+
+
+if you accidentally check in sensitive information
+
+https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository
