@@ -1,4 +1,4 @@
-## Step by step
+## Step by step for Workshop 01
 ```
 mkdir workshop1-api
 cd workshop1-api
